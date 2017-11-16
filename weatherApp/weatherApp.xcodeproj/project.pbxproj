@@ -12,8 +12,7 @@
 		80C1E2EA1FB9A4ED00AD2226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C1E2E81FB9A4ED00AD2226 /* Main.storyboard */; };
 		80C1E2EC1FB9A4ED00AD2226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C1E2EB1FB9A4ED00AD2226 /* Assets.xcassets */; };
 		80C1E2EF1FB9A4ED00AD2226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C1E2ED1FB9A4ED00AD2226 /* LaunchScreen.storyboard */; };
-		80C1E2F81FBA0AF700AD2226 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1E2F71FBA0AF700AD2226 /* WeatherResponse.swift */; };
-		80F13D651FBC851600DF31AC /* WeatherResponse2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F13D641FBC851600DF31AC /* WeatherResponse2.swift */; };
+		80F13D651FBC851600DF31AC /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F13D641FBC851600DF31AC /* WeatherResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +23,7 @@
 		80C1E2EB1FB9A4ED00AD2226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80C1E2EE1FB9A4ED00AD2226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80C1E2F01FB9A4ED00AD2226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80C1E2F71FBA0AF700AD2226 /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
-		80F13D641FBC851600DF31AC /* WeatherResponse2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse2.swift; sourceTree = "<group>"; };
+		80F13D641FBC851600DF31AC /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +70,7 @@
 		80C1E2F61FBA0A9A00AD2226 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				80C1E2F71FBA0AF700AD2226 /* WeatherResponse.swift */,
-				80F13D641FBC851600DF31AC /* WeatherResponse2.swift */,
+				80F13D641FBC851600DF31AC /* WeatherResponse.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -110,6 +107,7 @@
 				TargetAttributes = {
 					80C1E2E01FB9A4ED00AD2226 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,8 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C1E2E71FB9A4ED00AD2226 /* ViewController.swift in Sources */,
-				80C1E2F81FBA0AF700AD2226 /* WeatherResponse.swift in Sources */,
-				80F13D651FBC851600DF31AC /* WeatherResponse2.swift in Sources */,
+				80F13D651FBC851600DF31AC /* WeatherResponse.swift in Sources */,
 				80C1E2E51FB9A4ED00AD2226 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +277,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lewis.weatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -292,7 +290,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lewis.weatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
