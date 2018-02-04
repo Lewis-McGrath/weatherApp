@@ -22,6 +22,7 @@ struct WeatherResponse: Codable {
 }
 
 struct City: Codable {
+    
     private enum CodingKeys: String, CodingKey{
         case id = "id"
         case name = "name"
@@ -45,6 +46,7 @@ struct Coord: Codable {
     let longitude: Float
 }
 
+// MARK: The main weather response I would display to the user.
 struct WeatherList: Codable {
     
     private enum CodingKeys: String, CodingKey {
@@ -54,6 +56,7 @@ struct WeatherList: Codable {
         case wind = "wind"
         case sys = "sys"
         case dateText = "dt_txt"
+        case date = "dt"
     }
     
     let main: MainWeather
@@ -61,7 +64,8 @@ struct WeatherList: Codable {
     let clouds: Clouds
     let wind: Wind
     let sys: Sys
-    let dateText : String
+    let dateText: String
+    let date: TimeInterval
 }
 
 struct MainWeather: Codable {
@@ -106,9 +110,3 @@ struct Wind: Codable {
 struct Sys: Codable{
     let pod : String
 }
-
-
-
-
-
-
